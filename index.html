@@ -12,10 +12,11 @@
 
   :root {
     --text-color: #e51414;
+    
   }
   body {
     background-color: black;
-    
+    font: Courier New;
   }
   
   h1 {
@@ -49,10 +50,11 @@
   
   p {
     color: var(--text-color);
-    font-size: 18px;
+    font-family: Courier;
+    font-size: 12px;
     position: absolute;
     left: 60%;
-    top: 70%;
+    top: 71%;
     justify-content: center;
     text-shadow: -1px 1px 10px,
       1px 1px 2px
@@ -60,9 +62,38 @@
   
   .homelink {
     color: var(--text-color);
+    font-family: Courier;
     position: absolute;
-    left: 44%;
+    left: 40%;
     top: 80%;
+   	box-shadow: 1px 1px 5px 1px;
+  	animation: box-pulse 4s infinite;
+  }
+  
+  .homelinktext {
+    color: var(--text-color);
+    font-family: Courier;
+    position: absolute;
+    left: 40%;
+    top: 80%;
+  }
+  
+  @keyframes box-pulse {
+    0% {
+      color: black;
+    }
+    25% {
+      color: var(--text-color);
+    }
+    50% {
+      color: black;
+    }
+    75% {
+      color: var(--text-color);
+    }
+    100% {
+      color: black;
+    }
   }
 
 </style>
@@ -98,7 +129,7 @@ DASDO1MW9MD92MD09M0-AS9,;OSAIJDFOQWMCPO3M2932M09AD
   <pre class="ascii2">                                                              
    ________________ ___  __ ____   ____   ___________   ____  
   / ___\_  __ \__  \\  \/ // __ \ / ___\ /  _ \_  __ \_/ __ \ 
- / /_/  |  | \// __ \\   /\  ___// /_/  |  |_| )  | \/\  ___/ 
+ / /_/  |  | \// __ \\   /\  ___// /_/  |  |_| |  | \/\  ___/ 
  \___  /|__|  (____  /\_/  \___  \___  / \____/|__|    \___/
 /_____/            \/          \/_____/                     </pre>
   
@@ -107,5 +138,6 @@ DASDO1MW9MD92MD09M0-AS9,;OSAIJDFOQWMCPO3M2932M09AD
   </p>
   
   <a class="homelink" href="https://gravegore.neocities.org">[enter here]</a>
+   <a class="homelinktext" href="https://gravegore.neocities.org">[enter here]</a>
 </body>
 </html>
